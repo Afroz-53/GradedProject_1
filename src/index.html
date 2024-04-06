@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Information</title>
+  <style>
+    /* Add your CSS styles here */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Exam Information</h1>
+    <!-- Display exam information -->
+  </header>
+  <div class="main-block">
+    <div class="options">
+      <label for="filter">Filter:</label>
+      <select id="filter">
+        <option value="All">All</option>
+        <option value="Passed">Passed</option>
+        <option value="Failed">Failed</option>
+      </select>
+
+      <label for="sort">Sort:</label>
+      <select id="sort">
+        <option value="Alphabetic Order">Alphabetic Order</option>
+        <option value="Asc by Final Grade">Asc by Final Grade</option>
+        <option value="Desc by Final Grade">Desc by Final Grade</option>
+      </select>
+
+      <!-- Optional filtering input -->
+      <!-- <input type="text" placeholder="Filter by Name" /> -->
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Name</th>
+          <th>Ticket's Number</th>
+          <th>Rating Grade</th>
+          <th>Exam Grade</th>
+          <th>Final Grade</th>
+          <th>Status</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sample row -->
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>12345</td>
+          <td>A</td>
+          <td>85</td>
+          <td>89</td>
+          <td>Passed</td>
+          <td><button>Show Details</button></td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+
+    <button>Show Statistics</button>
+  </div>
+</body>
+</html>
